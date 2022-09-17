@@ -1,0 +1,230 @@
+/* GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:rgba(250,250,210);
+    /* Color in hx: #E0FFFF */
+    font-family: candara, arial;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* FIM GERAL */
+
+/* CABEÇALHO */
+
+header{
+    background-color:rgba(178,34,34);
+    color:#fff;
+    /* padding: 10px; */
+    width: 100%;
+    position: fixed;
+    text-shadow: 2px 2px 3px #000;
+    font-family: candara, arial;
+}
+@media (min-width: 320px) and (max-width: 450px){
+    header{
+        text-align: center;
+        position: fixed;
+    }
+}
+
+h1{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 4rem;
+    color: rgba(255, 0, 0);
+    text-shadow: 2px 2px 3px #000;
+}
+@media (min-width: 320px) and (max-width: 450px){
+    h1{
+    text-align: left;
+    padding-top: 10px;
+    font-size: 3rem;
+    color: rgba(255, 0, 0);
+    text-shadow: 0px 0px ;
+    }
+}
+
+h2{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.7rem;
+    color: #000;
+    text-shadow: 1px 1px #000;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    transition: all 200ms ease-in-out;
+}
+
+a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+}
+
+/* FIM CABEÇALHO */
+
+/* CONTEUDO */
+
+h3{
+    font-size: 2.3rem;
+    margin: 0;
+    padding: 5px;
+    font-family: candara, arial;
+    text-align: center;
+}
+
+h4{
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 5px;
+    font-family: candara, arial;
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+    padding: 2px;
+    font-size: 1.7rem;
+    margin-top: 6%;
+}
+
+.compre{
+    background-color: rgba(250,128,114);
+    width: 12rem;
+    height: 10rem;
+    position: fixed;
+    right: 2px;
+    text-align: center;
+    margin-top: 5%;
+    z-index: 1;
+    border-radius: 5px;
+    border: 2px solid rgba(169,169,169);
+}
+@media screen and (max-width:700px){
+    .compre{
+        margin-top: 18%; 
+    }
+}
+button{
+        text-align: center;
+        margin-top: 2%;
+        padding: 5px;
+        font-size: 1.5rem;
+        background-color: rgba(255,255,0, 1.0);
+        border-radius: 5px;
+        border: 1px solid rgba(169,169,169);
+        font-weight: bold;
+        width: 90%;
+}
+
+p{
+    text-align: justify;
+    font-size: 1.6rem;
+    padding: 10px;
+    color: #000;
+}
+
+/* #teste-espaco{
+    margin-top: 130px;
+    width: 80%;
+    max-width: 90%;
+    max-height: 90%;
+    min-width: 0;
+    min-height: 0;
+} */
+
+.container{
+    background-color: rgba(245,245,220, 1.0);
+    width: 90%;
+    margin: 0 auto;
+    /* margin-top: 60px; */
+    box-shadow: 2px 2px 3px rgba(255,140,0);
+    max-width: 90%;
+    max-height: 90%;
+    min-width: 0;
+    min-height: 0;
+    margin-top: 5%;
+    margin-bottom: 40px;
+}
+@media screen and (max-width:700px) {
+    .container{
+        margin-top: 18%;
+    }
+}
+
+#grid-container{
+    margin-top: 5px;
+    background-color: rgba(255,160,122);
+    /* padding: 10px; */
+    padding: 5px;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 4px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid div{
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2px;
+    padding-bottom: 10px;
+    box-shadow: 1px 1px rgba(255,140,0);
+}
+
+.img-grid{
+    width: 20rem;
+    height: 12rem;
+    border-radius: 5px;
+    transition: 300ms ease-in-out;
+}
+img:hover{
+    transform: scale(1);
+    border: solid 2px rgba(255,165,0);
+}
+
+ul, li{
+    font-size: 1.6rem;
+    text-align: left;
+    margin-left: 30px;
+    padding-bottom: 10px;
+}
+
+/* FIM CONTEUDO */
+
+/* RODAPÉ */
+
+footer{
+    background-color: rgba(178,34,34);
+    color:#fff;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.txFooter{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+/* FIM RODAPÉ */
